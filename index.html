@@ -7,30 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        /*
+        largura total: 500px
+        espaço sobrando: -100px
+
+        fator de crescimento do filho 1: (2x300)/(600px+300px)=.667 x -100 = -66.7px
+        fator de crescimento do filho 2: (1x300)/(600px+300px)=.333 x -100 = -33.3px
+
+        */
+
         .flex-div {
             width: 500px;
-            height: 500px;
             display: flex;
-            justify-content: space-around;
         }
 
         .child-div1 {
             border: 1px solid black;
-            width: 20px;
-            height: 15px;
+            flex-basis: 300px;
+            flex-shrink: 2;
         }
 
         .child-div2 {
             border: 1px solid black;
-            width: 20px;
-            height: 20px;
+            flex-basis: 300px;  
+            flex-shrink: 1;          
         }
 
-        .child-div3 {
-            border: 1px solid black;
-            width: 20px;
-            height: 25px;
-        }
+
     </style>
 </head>
 
@@ -41,9 +45,6 @@
         </div>
         <div class='child-div2'>
             2
-        </div>
-        <div class='child-div3'>
-            3
         </div>
 
     </div>
