@@ -7,47 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        /*
-        largura total: 500px
-        espaço sobrando: -100px
-
-        fator de crescimento do filho 1: (2x300)/(600px+300px)=.667 x -100 = -66.7px
-        fator de crescimento do filho 2: (1x300)/(600px+300px)=.333 x -100 = -33.3px
-
-        */
-
-        .flex-div {
-            width: 500px;
-            display: flex;
+        .my-div {
+            color: red;
         }
-
-        .child-div1 {
-            border: 1px solid black;
-            flex-basis: 300px;
-            flex-shrink: 2;
+        #my-input {
+            background-color: dodgerblue;
         }
-
-        .child-div2 {
-            border: 1px solid black;
-            flex-basis: 300px;  
-            flex-shrink: 1;          
+        #my-input:hover{
+            background-color: green;
         }
-
+        span[gama-academy]{
+            color:greenyellow;
+        }
+        .my-div::first-letter{
+            font-size: 30px;
+        }
 
     </style>
 </head>
 
 <body>
-    <div class='flex-div'>
-        <div class='child-div1'>
-            1
-        </div>
-        <div class='child-div2'>
-            2
-        </div>
-
-    </div>
+    <div class="my-div">
+        Hello, World!
+    </div> 
+    <input id="my-input">
+    <span gama-academy>Gama Academy</span>
 </body>
 
 </html>
