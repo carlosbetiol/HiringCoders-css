@@ -6,7 +6,7 @@ Use:
 ```bash
 git clone https://github.com/carlosbetiol/HiringCoders-css.git
 
-Each branch is a CSS class starting on 5:
+# Each branch is a CSS class starting on 5:
 
 # properties, colors and typography
 git checkout aulas/aula05
